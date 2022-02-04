@@ -313,7 +313,7 @@ h1{
 	position: relative;
 	bottom: 19px;
 }
-#gmail, #vk, #tg, #beget{
+#gmail, #vk, #tg, #github, #twitter{
 	float: left;
 	width: 50%;
 	padding-left: 15%;
@@ -345,7 +345,7 @@ h1{
 /*Мобильный вид*/
 @media(max-width: 900px){
 	/*Контакты*/
-	#gmail, #vk, #tg, #beget{
+	#gmail, #vk, #tg, #github, #twitter{
   		width: 100%;
   		padding-left: 10%;
 	}
@@ -400,6 +400,14 @@ h1{
 	}
 }
 
+@media(prefers-reduced-motion: reduce){
+	#about_model{
+		display: none;
+	}
+	.testimotionals .card .layer, .testimotionals .card .layer2{
+		transition: 0s;
+	}
+}
 @media(prefers-reduced-motion: no-preference){
 	@keyframes glowing{
 		0% {background-position: 0 0;}

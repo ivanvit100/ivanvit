@@ -1,5 +1,5 @@
-var CACHE_STATIC_NAME = 'static-v31';
-var CACHE_DYNAMIC_NAME = 'dynamic-v31';
+var CACHE_STATIC_NAME = 'static-v33';
+var CACHE_DYNAMIC_NAME = 'dynamic-v33';
 
 self.addEventListener('install', function (event) {
   console.log('Installing Service Worker ...');
@@ -8,7 +8,7 @@ self.addEventListener('install', function (event) {
       .then(function (cache) {
         console.log('Precaching App Shell');
         cache.addAll([
-          		'/js/script.js',
+        '/js/script.js',
 		'/js/vue-s.js',
 		'/css/style.css',
 		'/img/logo.png',

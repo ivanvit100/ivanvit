@@ -116,22 +116,27 @@
   			<hr>
 			<footer><!--Подвал/контакты-->
 				<div id="contacts">
-					<div id="gmail">
-  						<img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Gmail_Icon_%282013-2020%29.svg" alt="mail" class="contact_img">
-  						<p v-bind:title="message" class="contact_href"><a href="mailto: develope@ivanvit.ru">develope@ivanvit.ru</a></p>
-  					</div>
   					<div id="vk">
-  						<img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="vk" class="contact_img">
-  						<p v-bind:title="message" class="contact_href"><a href="https://vk.com/ivanvit">@ivanvit</a></p>
-  					</div>
-  					<div id="tg">
-  						<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="telegram" class="contact_img">
-  						<p v-bind:title="message" class="contact_href"><a href="https://t.me/ivanvit100">@ivanvit100</a></p>
-  					</div>
-  					<div id="beget">
-  						<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" class="contact_img">
-  						<p v-bind:title="message" class="contact_href"><a href="https://github.com/ivanvit100">ivanvit100</a></p>
-  					</div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="vk" class="contact_img">
+              <p v-bind:title="message" class="contact_href"><a href="https://vk.com/ivanvit">@ivanvit</a></p>
+            </div>
+            <div id="tg">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="telegram" class="contact_img">
+              <p v-bind:title="message" class="contact_href"><a href="https://t.me/ivanvit100">@ivanvit100</a></p>
+            </div>
+            <div id="twitter">
+              <img src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429.png" alt="twitter" class="contact_img">
+              <p v-bind:title="message" class="contact_href"><a href="https://twitter.com/ivanvit100">@ivanvit100</a></p>
+            </div>
+            <div id="github">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" class="contact_img">
+              <p v-bind:title="message" class="contact_href"><a href="https://github.com/ivanvit100">ivanvit100</a></p>
+            </div>
+            <div id="gmail">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Gmail_Icon_%282013-2020%29.svg" alt="mail" class="contact_img">
+              <p v-bind:title="message" class="contact_href"><a href="mailto: develope@ivanvit.ru">develope@ivanvit.ru</a></p>
+            </div>
+          </div>
   				</div>
 				<div id="copyright"><img src="/img/copyright.svg" alt="copyright" id="copyright_svg">2022 Иванущенко Виталий</div>
 			</footer>
