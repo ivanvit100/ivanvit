@@ -65,7 +65,7 @@ a{
 	text-decoration: none;
 }
 h1{
-	font-family: "Roboto";
+	font-family: "consolas" !important;
 }
 a, button, p, h1, h2, h3, h4, span{
 	cursor: url(/img/link.png), pointer;
