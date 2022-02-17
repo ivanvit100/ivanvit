@@ -137,8 +137,7 @@ main{
 }
 #header_avatar{
 	width: 100px;
-	height: 100px;
-	border-radius: 50px;
+	border-radius: 50%;
 	left: 50px;
 }
 #header_text{
