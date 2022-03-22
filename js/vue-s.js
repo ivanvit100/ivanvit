@@ -22,12 +22,6 @@ var github = new Vue({
         	message:'Оцените профиль!'
       	}
 });
-var twitter = new Vue({
-	el:'#twitter',
-      	data:{
-        	message:'Напишите сейчас!'
-      	}
-});
 var download = new Vue({
       	el:'#add_button',
       	data:{
