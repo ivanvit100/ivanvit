@@ -50,28 +50,28 @@
 		<div class="contained"><!--Контеинер, необходимый для размытия шапки при прокрутке страницы-->
 			<div id="about"><!--Блок информации-->
 				<div id="about_model"></div><!--3D-->
-    			<div id="about_text">
-    				<h3 id="about_h">НАЧАЛО</h3>
+    		<div id="about_text">
+    			<h3 id="about_h">НАЧАЛО</h3>
    					<span class="about_span">У Вас есть идея, но Вы не знаете как её реализовать?</span>
     				<br>
     				<span class="about_span">Выбирая меня Вы получаете разработчика, полного энтузиазма сделать максимум для Вашего проекта! Неважно имеете Вы команду проффессионалов и огромный коммерческий опыт или только яркую идею, у Вашего дела есть главное - потенциал, который необходимо реализовать. И в этом Вы можете положиться на меня! Я всегда нацелен на результат, а результатом нашего сотрудничества станет успешное развитие Вашего проекта.</span>
-          			<br>
-          			<span class="about_span" id="down_drop" v-on:click="down_drop" v-bind:title="message">Есть вопросы? Пишите!</span>
-          			<br>
-          			<br>
-          			<br>
-          			<button v-bind:title="message" id="add_button">Установить</button>
+          	<br>
+          	<span class="about_span" id="down_drop" v-on:click="down_drop" v-bind:title="message">Есть вопросы? Пишите!</span>
+          	<br>
+          	<br>
+          	<br>
+          	<button v-bind:title="message" id="add_button">Установить</button>
     			</div>
   			</div>
   			<div id="projects" class="wow fadeInUp" data-wow-duration="1.5s"><!--Блок "Проекты"-->
-				<h3>Некоторые проекты</h3>
-  		  		<div class="testimotionals"><!--Отдельные карты-->
+				  <h3>Некоторые проекты</h3>
+  		    <div class="testimotionals"><!--Отдельные карты-->
   			 		<div class="card">
-            			<div class="layer"></div>
- 						<div id="card1" class="content">
-  							<div class="details">
-      							<h2>{{title}}</h2>
-            	 	 		</div>
+            	<div class="layer"></div>
+ 	            <div id="card1" class="content">
+  						  <div class="details">
+      						<h2>{{title}}</h2>
+            	 	</div>
     						<p>{{text}}</p>
     						<div class="details">
      							<h2><a v-bind:href="link" data-splitbee-event="Projects"><span>Подробнее</span></a></h2>

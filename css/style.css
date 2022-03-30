@@ -346,8 +346,13 @@ h1{
 
 /*Мобильный вид*/
 @media(max-width: 900px){
+	/*Общие*/
+	p, span, a{
+		font-size: 16px;
+	}
+
 	/*Контакты*/
-	#gmail, #vk, #tg, #github, #twitter{
+	#gmail, #vk, #tg, #github{
   		width: 100%;
   		padding-left: 10%;
 	}
@@ -383,6 +388,12 @@ h1{
 	/*Проекты*/
 	.testimotionals{
 		width: 99%;
+	}
+	.testimotionals .card{
+		height: 215px
+	}
+	.testimotionals .card .content p{
+		font-size: 16px;
 	}
 }
 
