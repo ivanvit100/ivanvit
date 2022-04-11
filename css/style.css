@@ -1,7 +1,7 @@
 /*Основные стили*/
 html{
 	box-sizing: border-box;
-	cursor: url(/img/select.png), auto;
+	cursor: url(./img/select.png), auto;
 }
 *, *:before, *:after{
 	box-sizing: inherit;
@@ -68,7 +68,7 @@ h1{
 	font-family: "consolas" !important;
 }
 a, button, p, h1, h2, h3, h4, span{
-	cursor: url(/img/link.png), pointer;
+	cursor: url(./img/link.png), pointer;
 }
 
 /*Прелоадер*/
@@ -233,7 +233,7 @@ h1{
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	height: 192px;
+	height: 210px;
 	margin: 0 auto;
 	background: #333;
 	padding: 20px;
