@@ -239,7 +239,9 @@ h1{
 	padding: 20px;
 	box-sizing: border-box;
 	text-align: center;
-	box-shadow: 0 10px 40px rgba(0,0,0,.5)
+	box-shadow: 0 10px 40px rgba(0,0,0,.5);
+	display: flex;  
+	align-items: center;
 }
 .testimotionals .card .layer{
 	z-index: 1;
@@ -325,8 +327,8 @@ h1{
 	margin-top: 30px;
 }
 #copyright_svg{
-	width: 0.750em;
-	height: 0.750em;
+	width: 0.780em;
+	height: 0.780em;
 }
 
 /*Цитата*/
