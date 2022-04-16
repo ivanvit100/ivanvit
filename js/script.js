@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     renderer.render(scene,camera);
   }
   function animate2(){
-    requestAnimationFrame(animate);
+    requestAnimationFrame(animate2);
     if(obj) obj.rotation.y = 45;
     renderer.render(scene,camera);
   }
