@@ -8,6 +8,11 @@ if ('serviceWorker' in navigator){
 document.addEventListener("DOMContentLoaded", function(event){ 
   //Проверка предпочтений пользователя
   isReduced = window.matchMedia(`(prefers-reduced-motion: reduce`) === true || window.matchMedia(`prefers-reduced-motion`).matches === true;
+  if(isReduced){
+    prjt = document.querySelector("#projects");
+    prjt.classList.remove("wow");
+    prjt.classList.remove("fadeInUp");
+  }
 
 	//Анимации
 	new WOW().init();	
@@ -45,9 +50,6 @@ document.addEventListener("DOMContentLoaded", function(event){
     loader.load('./model/scene.gltf', function(gltf){
       obj = gltf.scene.children[0];
       obj.scale.set(1.3, 1.3, 1.3);
-      if(!!isReduced){
-        obj.rotation.z = 197;
-      }
       scene.add(gltf.scene);
       if(isReduced){
         animate();
