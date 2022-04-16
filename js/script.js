@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function(event){
       scene.add(gltf.scene);
       isReduced = window.matchMedia(`(prefers-reduced-motion: reduce`) === true || window.matchMedia(`prefers-reduced-motion`).matches === true;
       if(!!isReduced){
-        obj.rotation.z += 47;
+        requestAnimationFrame(animate);
+        obj.rotation.z = 47;
         renderer.render(scene,camera);
       }
       else{
