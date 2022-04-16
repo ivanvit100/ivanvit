@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function(event){
       scene.add(gltf.scene);
       function animate(){
         requestAnimationFrame(animate);
-        obj.rotation.z += 0.003;
+        obj.scene.rotation.z += 0.003;
         renderer.render(scene,camera);
       }
       if(!!isReduced){
