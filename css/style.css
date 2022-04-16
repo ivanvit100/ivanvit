@@ -411,6 +411,9 @@ h1{
 		height: auto;
 		margin-bottom: 20px;
 	}
+	#about_model{
+		display: none;
+	}
 }
 @media(max-width: 470px){
 	#pre_img{
@@ -423,9 +426,6 @@ h1{
 }
 
 @media(prefers-reduced-motion: reduce){
-	#about_model{
-		display: none;
-	}
 	.testimotionals .card .layer, .testimotionals .card .layer2{
 		transition: 0s;
 	}

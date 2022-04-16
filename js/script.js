@@ -54,13 +54,21 @@ document.addEventListener("DOMContentLoaded", function(event){
       if(!isReduced){
         animate();
       }
+      else{
+        animate2()
+      }
     });
   }
   init();
 
   function animate(){
     requestAnimationFrame(animate);
-    if(obj) obj.rotation.z += 0.003;
+    if(obj) obj.rotation.y += 0.003;
+    renderer.render(scene,camera);
+  }
+  function animate2(){
+    requestAnimationFrame(animate);
+    if(obj) obj.rotation.y = 45;
     renderer.render(scene,camera);
   }
 
