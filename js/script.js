@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(event){
       obj = gltf.scene;
       obj.scale.set(1.3, 1.3, 1.3);
       scene.add(gltf.scene);
-      if(!!isReduced){
+      if(!isReduced){
         animate();
       }
     });
