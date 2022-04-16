@@ -51,17 +51,18 @@ document.addEventListener("DOMContentLoaded", function(event){
       obj = gltf.scene.children[0];
       obj.scale.set(1.3, 1.3, 1.3);
       scene.add(gltf.scene);
-      function animate(){
-        requestAnimationFrame(animate);
-        obj.scene.rotation.z += 0.003;
-        renderer.render(scene,camera);
-      }
       if(!!isReduced){
         animate();
       }
     });
   }
   init();
+
+  function animate(){
+    requestAnimationFrame(animate);
+    if(obj) obj.rotation.z += 0.003;
+    renderer.render(scene,camera);
+  }
 
   //Анимация появления 3D
   cnvs = document.querySelector("canvas");
