@@ -46,7 +46,8 @@ document.addEventListener("DOMContentLoaded", function(event){
       isReduced = window.matchMedia(`(prefers-reduced-motion: reduce`) === true || window.matchMedia(`prefers-reduced-motion`).matches === true;
       if(!!isReduced){
         requestAnimationFrame(animate);
-        obj.rotation.z = 47;
+        if(obj)
+          obj.rotation.z = 197;
         renderer.render(scene,camera);
       }
       else{
