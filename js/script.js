@@ -51,8 +51,11 @@ document.addEventListener("DOMContentLoaded", function(event){
       obj = gltf.scene.children[0];
       obj.scale.set(1.3, 1.3, 1.3);
       scene.add(gltf.scene);
-      if(isReduced){
+      if(!!isReduced){
         animate();
+      }else{
+        obj.rotation.z = 179;
+        renderer.render(scene,camera);
       }
     });
   }
@@ -65,14 +68,9 @@ document.addEventListener("DOMContentLoaded", function(event){
   init();
 
   //Анимация появления 3D
-  if(!!isReduced){
-    document.querySelector("about_model").style.display = "none";
-  }
-  else{
-    cnvs = document.querySelector("canvas");
-    cnvs.classList.add("wow");
-    cnvs.classList.add("fadeInRight");
-  }
+  cnvs = document.querySelector("canvas");
+  cnvs.classList.add("wow");
+  cnvs.classList.add("fadeInRight");
 
   if(cnvs.offsetHeight == 0){
     document.getElementById("about_text").style.height = "auto";
