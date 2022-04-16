@@ -225,6 +225,13 @@ h1{
 	font-size: 30px;
 	margin-bottom: 15px;
 }
+#cards_convert{
+	display: flex;
+	align-items: center;
+	column-gap: 2%;
+	-moz-column-gap: 2%;
+	-webkit-column-gap: 2%;
+}
 .testimotionals{
 	width: 32%;
 	display: inline-block;
@@ -236,7 +243,7 @@ h1{
 	height: 210px;
 	margin: 0 auto;
 	background: #333;
-	padding: 20px;
+	padding: 4%;
 	box-sizing: border-box;
 	text-align: center;
 	box-shadow: 0 10px 40px rgba(0,0,0,.5);
@@ -377,7 +384,7 @@ h1{
 	#about{
 		margin-top: 30px;
 	}
-	#about_model, #add_button{
+	#about_model{
 		display: none;
 	}
 	#about_h{
@@ -388,6 +395,9 @@ h1{
 	}
 
 	/*Проекты*/
+	#cards_convert{
+		display: block;
+	}
 	.testimotionals{
 		width: 99%;
 	}

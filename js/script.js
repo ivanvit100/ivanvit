@@ -1,8 +1,8 @@
 //Регистрация service-worker
 if ('serviceWorker' in navigator){
  	navigator.serviceWorker.register('/service.js', {
-    		scope: '/'
-  	});
+    scope: '/'
+  });
 }
 
 document.addEventListener("DOMContentLoaded", function(event){ 
@@ -43,7 +43,14 @@ document.addEventListener("DOMContentLoaded", function(event){
       obj = gltf.scene.children[0];
       obj.scale.set(1.3, 1.3, 1.3);
       scene.add(gltf.scene);
-      animate();
+      isReduced = window.matchMedia(`(prefers-reduced-motion: reduce`) === true || window.matchMedia(`prefers-reduced-motion`).matches === true;
+      if(!!isReduced ){
+        obj.rotation.z += 47;
+        renderer.render(scene,camera);
+      }
+      else{
+        animate();
+      }
     });
   }
   function animate(){
@@ -58,4 +65,8 @@ document.addEventListener("DOMContentLoaded", function(event){
   cnvs = document.querySelector("canvas");
   cnvs.classList.add("wow");
   cnvs.classList.add("fadeInRight");
+  if(cnvs.offsetHeight == 0){
+    document.getElementById("about_text").style.height = "auto";
+    document.getElementById("about_text").style.marginBottom = "50px";
+  }
 }); 
