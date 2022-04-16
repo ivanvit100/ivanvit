@@ -65,9 +65,15 @@ document.addEventListener("DOMContentLoaded", function(event){
   init();
 
   //Анимация появления 3D
-  cnvs = document.querySelector("canvas");
-  cnvs.classList.add("wow");
-  cnvs.classList.add("fadeInRight");
+  if(!!isReduced){
+    document.querySelector("about_model").style.display = "none";
+  }
+  else{
+    cnvs = document.querySelector("canvas");
+    cnvs.classList.add("wow");
+    cnvs.classList.add("fadeInRight");
+  }
+
   if(cnvs.offsetHeight == 0){
     document.getElementById("about_text").style.height = "auto";
     document.getElementById("about_text").style.marginBottom = "50px";
