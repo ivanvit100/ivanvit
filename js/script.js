@@ -6,6 +6,9 @@ if ('serviceWorker' in navigator){
 }
 
 document.addEventListener("DOMContentLoaded", function(event){ 
+  //Проверка предпочтений пользователя
+  isReduced = window.matchMedia(`(prefers-reduced-motion: reduce`) === true || window.matchMedia(`prefers-reduced-motion`).matches === true;
+
 	//Анимации
 	new WOW().init();	
 
@@ -42,15 +45,11 @@ document.addEventListener("DOMContentLoaded", function(event){
     loader.load('./model/scene.gltf', function(gltf){
       obj = gltf.scene.children[0];
       obj.scale.set(1.3, 1.3, 1.3);
-      scene.add(gltf.scene);
-      isReduced = window.matchMedia(`(prefers-reduced-motion: reduce`) === true || window.matchMedia(`prefers-reduced-motion`).matches === true;
       if(!!isReduced){
-        requestAnimationFrame(animate);
-        if(obj)
-          obj.rotation.z = 197;
-        renderer.render(scene,camera);
+        obj.rotation.z = 197;
       }
-      else{
+      scene.add(gltf.scene);
+      if(isReduced){
         animate();
       }
     });
