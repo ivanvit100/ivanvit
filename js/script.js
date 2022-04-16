@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     }
     let loader = new THREE.GLTFLoader();
     loader.load('./model/scene.gltf', function(gltf){
-      obj = gltf.scene.children[0];
+      obj = gltf.scene;
       obj.scale.set(1.3, 1.3, 1.3);
       scene.add(gltf.scene);
       if(!!isReduced){
