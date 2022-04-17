@@ -8,14 +8,10 @@ if ('serviceWorker' in navigator){
 document.addEventListener("DOMContentLoaded", function(event){ 
   //Проверка предпочтений пользователя
   isReduced = window.matchMedia(`(prefers-reduced-motion: reduce`) === true || window.matchMedia(`prefers-reduced-motion`).matches === true;
-  if(isReduced){
-    prjt = document.querySelector("#projects");
-    prjt.classList.remove("wow");
-    prjt.classList.remove("fadeInUp");
-  }
-
-	//Анимации
-	new WOW().init();	
+  if(!isReduced){
+    //Анимации
+    new WOW().init();
+  }	
 
 	//Прелоадер
 	setTimeout(function(){ 
@@ -54,21 +50,12 @@ document.addEventListener("DOMContentLoaded", function(event){
       if(!isReduced){
         animate();
       }
-      else{
-        animate2()
-      }
     });
   }
   init();
-
   function animate(){
     requestAnimationFrame(animate);
     if(obj) obj.rotation.y += 0.003;
-    renderer.render(scene,camera);
-  }
-  function animate2(){
-    requestAnimationFrame(animate2);
-    if(obj) obj.rotation.y = 45;
     renderer.render(scene,camera);
   }
 

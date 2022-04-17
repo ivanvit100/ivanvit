@@ -429,6 +429,9 @@ h1{
 	.testimotionals .card .layer, .testimotionals .card .layer2{
 		transition: 0s;
 	}
+	#about_model{
+		display: none;
+	}
 }
 @media(prefers-reduced-motion: no-preference){
 	@keyframes glowing{
