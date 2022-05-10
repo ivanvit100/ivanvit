@@ -239,6 +239,7 @@ h1{
 	-moz-column-gap: 2%;
 	-webkit-column-gap: 2%;
 	-ms-column-gap: 2%;
+	justify-content: space-around;
 }
 .testimotionals{
 	width: 32%;
