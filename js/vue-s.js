@@ -22,6 +22,12 @@ var github = new Vue({
         	message:'Оцените профиль!'
       	}
 });
+var launchpad = new Vue({
+      	el:'#launchpad',
+      	data:{
+        	message:'Оцените профиль!'
+      	}
+});
 
 var down = new Vue({
       	el:'#down_drop',

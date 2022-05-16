@@ -43,6 +43,7 @@ footer{
 	margin-top: 25px;
 	margin-bottom: 20px;
 	position: relative;
+	display: table;
 	z-index: 2;
 }
 body::-webkit-scrollbar{
@@ -125,6 +126,7 @@ header{
 	}
 }
 main{
+	min-height: 100vh;
 	padding: 1em 0;
 	position: relative;
 	background: #ffffff;
@@ -179,42 +181,6 @@ h1{
 }
 #about_text{
 	height: 698px;
-}
-#add_button{
-	background-color: #7EECFF;
-	border: 0 solid #E5E7EB;
-	box-sizing: border-box;
-	color: #000000;
-	font-size: 1em;
-	font-weight: 700;
-	justify-content: center;
-	line-height: 1.75rem;
-	padding: .75rem 1.65rem;
-	position: relative;
-	text-align: center;
-	text-decoration: none #000000 solid;
-	text-decoration-thickness: auto;
-	width: 100%;
-	max-width: 180px;
-	transform: rotate(-2deg);
-	-webkit-user-select: none;
-	touch-action: manipulation;
-}
-#add_button:focus{
-	outline: 0;
-}
-#add_button:after{
-	content: '';
-	position: absolute;
-	border: 1px solid #000000;
-	bottom: 4px;
-	left: 4px;
-	width: calc(100% - 1px);
-	height: calc(100% - 1px);
-}
-#add_button:hover:after{
-	bottom: 2px;
-	left: 2px;
 }
 
 /*Проекты*/
@@ -340,13 +306,16 @@ h1{
 	position: relative;
 	bottom: 19px;
 }
-#gmail, #vk, #tg, #github, #twitter{
+#gmail, #vk, #tg, #github, #launchpad{
 	float: left;
 	width: 50%;
 	padding-left: 15%;
 }
 #copyright{
 	text-align: center;
+	display: table-row;
+	position: relative;
+	top: 30px;
 	margin-top: 30px;
 }
 #copyright_svg{
@@ -377,7 +346,7 @@ h1{
 	}
 
 	/*Контакты*/
-	#gmail, #vk, #tg, #github{
+	#gmail, #vk, #tg, #github, #launchpad{
   		width: 100%;
   		padding-left: 10%;
 	}
