@@ -1,5 +1,5 @@
-var CACHE_STATIC_NAME = 'static-v43';
-var CACHE_DYNAMIC_NAME = 'dynamic-v43';
+var CACHE_STATIC_NAME = 'static-v44';
+var CACHE_DYNAMIC_NAME = 'dynamic-v44';
 
 self.addEventListener('install', function (event) {
   console.log('Installing Service Worker ...');
@@ -31,6 +31,7 @@ self.addEventListener('install', function (event) {
 		    'https://cdn.jsdelivr.net/npm/vue@2',
 		    'https://ivanvit.ru/model/scene.gltf',
 		    'https://ivanvit.ru/model/scene.bin',
+        'https://cdn.iconscout.com/icon/free/png-256/launchpad-3521541-2944959.png'
         ]);
       })
   )
