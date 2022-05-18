@@ -32,7 +32,7 @@ var launchpad = new Vue({
 var down = new Vue({
       	el:'#down_drop',
       	data:{
-        	message:'Напишите сейчас!'
+        	message:'Показать контакты!'
       	},
 	methods:{
 	down_drop: function (event){
