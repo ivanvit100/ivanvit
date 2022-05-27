@@ -271,24 +271,27 @@ h1{
 	line-height: 24px;
 	color: #fff;
 }
-.testimotionals .card .conte nt .details h2{
-	font-size: 18px;
-	color: white;
-}
 .testimotionals .card .content .details h2 span{
 	font-size: 18px;
 	color: #ff7f26;
 	transition: 0.5s;
+	position: relative;
+	top: -5px;
 }
 .testimotionals .card:hover .content .details h2 span{
 	color: white;
-	position: relative
 }
 .testimotionals .card2:hover p::selection, .testimotionals .card2:hover span::selection, .testimotionals .card2:hover h2::selection{
 	background: rgba(255, 127, 38, 0.6);
 }
 .testimotionals .card2:hover p::-moz--moz-selection, .testimotionals .card2:hover span::-moz-selection, .testimotionals .card2:hover h2::-moz-selection{
 	background: rgba(255, 127, 38, 0.6);
+}
+#card1, #card2, #card3{
+	display: grid;
+	grid-template-rows: 45px 110px 45px;
+	justify-content: center;
+	align-items: center;
 }
 
 /*Контакты*/
