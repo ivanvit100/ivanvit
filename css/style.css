@@ -391,9 +391,9 @@ h1{
 		font-size: 16px;
 	}
 	.testimotionals .card .content h2{
-		font-size: 21px;
+		font-size: 26px;
 		position: relative;
-		top: 2px;
+		top: 25%;
 	}
 }
 
