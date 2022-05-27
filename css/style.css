@@ -276,7 +276,6 @@ h1{
 	color: #ff7f26;
 	transition: 0.5s;
 	position: relative;
-	top: -5px;
 }
 .testimotionals .card:hover .content .details h2 span{
 	color: white;
@@ -291,7 +290,6 @@ h1{
 	display: grid;
 	grid-template-rows: 45px 110px 45px;
 	justify-content: center;
-	align-items: center;
 }
 
 /*Контакты*/
