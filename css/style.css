@@ -390,6 +390,11 @@ h1{
 	.testimotionals .card .content p{
 		font-size: 16px;
 	}
+	.testimotionals .card .content h2{
+		font-size: 21px;
+		position: relative;
+		top: 2px;
+	}
 }
 
 @media(max-width: 960px){
