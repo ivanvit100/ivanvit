@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 <head>
   <title>Иванущенко Виталий | Web-developer</title>
@@ -23,16 +23,12 @@
 	<link rel="stylesheet" href="./css/style.css"><!--Файл стиля-->
 	<link rel="shortcut icon" href="./img/logo.png" type="image/png"><!--Логотип-->
 	<link rel="manifest" href="./webmanifest.webmanifest"><!--Манифест отладки-->
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css"></noscript><!--Сторонние анимации-->
+	<link rel="preload" href="./css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><!--Сторонние анимации-->
 	<link rel="preload" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700"></noscript><!--Шрифты-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://cdnjs.cloudflare.com">
 	<link rel="preconnect" href="https://cdn.jsdelivr.net">
-	<link rel="preconnect" href="https://cdn.rawgit.com">
-	<link rel="preconnect" href="https://upload.wikimedia.org">
-	<link rel="preconnect" href="https://flaticon.com">
 </head>
 <body>
 	<header class="zoom-me"><!--Шапка сайта-->
@@ -66,11 +62,11 @@
               <div class="card">
                 <div class="layer"></div>
                 <div id="card1" class="content">
-                  <div class="details" style="grid-row: 1">
+                  <div class="details-h">
                     <h2>{{title}}</h2>
                   </div>
-                  <p style="grid-row: 2">{{text}}</p>
-                  <div class="details" style="grid-row: 3">
+                  <p class="card-p">{{text}}</p>
+                  <div class="details">
                     <h2><a v-bind:href="link"><span>Подробнее</span></a></h2>
                   </div>
                 </div>
@@ -80,11 +76,11 @@
               <div class="card">
                 <div class="layer2"></div>
                 <div id="card2" class="content">
-                  <div class="details" style="grid-row: 1">
+                  <div class="details-h">
                     <h2>{{title}}</h2>
                   </div>
-                  <p style="grid-row: 2">{{text}}</p>
-                  <div class="details" style="grid-row: 3">
+                  <p class="card-p">{{text}}</p>
+                  <div class="details">
                     <h2><a v-bind:href="link"><span>Подробнее</span></a></h2>
                   </div>
                 </div>
@@ -94,11 +90,11 @@
               <div class="card">
    	            <div class="layer"></div>
    	            <div id="card3" class="content">
-    						  <div class="details" style="grid-row: 1">
+    						  <div class="details-h">
       							<h2>{{title}}</h2>
    							  </div>
-   							  <p style="grid-row: 2">{{text}}</p>
-      						<div class="details" style="grid-row: 3">
+   							  <p class="card-p">{{text}}</p>
+      						<div class="details">
                     <h2><a v-bind:href="link"><span>Подробнее</span></a></h2>
                   </div>
    					  	</div>
@@ -114,23 +110,23 @@
   		  <hr>
 		    <footer><!--Подвал/контакты-->
   				<div id="vk">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="vk" class="contact_img">
+            <img src="./img/vk.svg" alt="vk" class="contact_img">
             <p v-bind:title="message" class="contact_href"><a href="https://vk.com/ivanvit">@ivanvit</a></p>
           </div>
           <div id="tg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="telegram" class="contact_img">
+            <img src="./img/tg.svg" alt="telegram" class="contact_img">
             <p v-bind:title="message" class="contact_href"><a href="https://t.me/ivanvit100">@ivanvit100</a></p>
           </div>
           <div id="github">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" class="contact_img">
+            <img src="./img/github.svg" alt="github" class="contact_img">
             <p v-bind:title="message" class="contact_href"><a href="https://github.com/ivanvit100">ivanvit100</a></p>
           </div>
           <div id="launchpad">
-            <img src="https://cdn.iconscout.com/icon/free/png-256/launchpad-3521541-2944959.png" alt="launchpad" class="contact_img">
+            <img src="./img/launchpad.svg" alt="launchpad" class="contact_img">
             <p v-bind:title="message" class="contact_href"><a href="https://code.launchpad.net/~ivanvit/+git">ivanvit</a></p>
           </div>
           <div id="gmail">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Gmail_Icon_%282013-2020%29.svg" alt="mail" class="contact_img">
+            <img src="./img/gmail.svg" alt="mail" class="contact_img">
             <p v-bind:title="message" class="contact_href"><a href="mailto: develope@ivanvit.ru">develope@ivanvit.ru</a></p>
           </div>
         <div id="copyright"><img src="./img/copyright.svg" alt="copyright" id="copyright_svg">2022 Иванущенко Виталий</div>
@@ -141,8 +137,8 @@
 	<script defer src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>-->
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
 	<script defer src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
-	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script defer src="./js/wow.js"></script>
+	<script src="./js/vue.js"></script>
   <script data-cfasync="false" src="./js/vue-s.js"></script>
 	<script data-cfasync="false" src="./js/script.js"></script>
 </body>

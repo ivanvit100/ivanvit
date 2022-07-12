@@ -263,10 +263,7 @@ h1{
 	z-index: 2; 
 	position: relative;
 }
-.testimotionals .card:hover  .layer{
-	top: 0;
-}
-.testimotionals .card:hover  .layer2{
+.testimotionals .card:hover  .layer2, .testimotionals .card:hover  .layer{
 	top: 0;
 }
 .testimotionals .card .content p{
@@ -282,6 +279,15 @@ h1{
 }
 .testimotionals .card:hover .content .details h2 span{
 	color: white;
+}
+.details-h{
+	grid-row: 1;
+}
+.card-p{
+	grid-row: 2;
+}
+.details{
+	grid-row: 3;
 }
 .testimotionals .card2:hover p::selection, .testimotionals .card2:hover span::selection, .testimotionals .card2:hover h2::selection{
 	background: rgba(255, 127, 38, 0.6);
